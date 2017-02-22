@@ -1,5 +1,5 @@
-var moneroWallet = require('./lib/wallet');
-var Wallet = new moneroWallet();
+var xdnWallet = require('./lib/wallet');
+var Wallet = new xdnWallet();
 
 // examples
 
@@ -19,12 +19,12 @@ var Wallet = new moneroWallet();
 //     console.log(height);
 // });
 //
-Wallet.incomingTransfers('all').then(function(result){
+Wallet.getTransfers().then(function(result){
     console.log(result);
 });
 
 //var destination = {};
-//destination.address = '47Vmj6BXSRPax69cVdqVP5APVLkcxxjjXdcP9fJWZdNc5mEpn3fXQY1CFmJDvyUXzj2Fy9XafvUgMbW91ZoqwqmQ6RjbVtp';
+//destination.address = 'ddcgpCXeQ5JSyuKtGPBMwoZZfwpbyeGxi2xtpmyqRJ9i8otyo29rdNGGUteGPWb5y5V6dkLHuzZJCMSV4P53EE6r1nAjbMSNo';
 //destination.amount = 1;
 //
 //Wallet.transfer(destination).then(function(result){

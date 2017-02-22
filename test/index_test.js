@@ -1,16 +1,16 @@
 'use strict';
-var moneroWallet = require('../lib/wallet');
+var xdnWallet = require('../lib/wallet');
 
-describe('moneroWallet', () => {
-    const Wallet = new moneroWallet();
+describe('xdnWallet', () => {
+    const Wallet = new xdnWallet();
 
     describe('constructor', () => {
         it('should have default host set to `127.0.0.1`', () => {
-            new moneroWallet().hostname.should.equal('127.0.0.1');
+            new xdnWallet().hostname.should.equal('127.0.0.1');
         });
 
-        it('should have default port set to 18082', () => {
-            new moneroWallet().port.should.equal(18082);
+        it('should have default port set to 42081', () => {
+            new xdnWallet().port.should.equal(42081);
         });
     });
 
@@ -24,13 +24,14 @@ describe('moneroWallet', () => {
             })
         })
 
-        describe('address()', () => {
-            it('should return the account address', (done) => {
-                Wallet.address().then(function(result){
-                    result.address.should.be.a.String();
-                    done();
-                })
-            })
-        })
+        //XDN does not have this RPC method :(
+        // describe('address()', () => {
+        //     it('should return the account address', (done) => {
+        //         Wallet.address.then(function(result){
+        //             result.address.should.be.a.String();
+        //             done();
+        //         })
+        //     })
+        // })
     })
 })

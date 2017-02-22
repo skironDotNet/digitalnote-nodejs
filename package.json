@@ -21,7 +21,6 @@
     "Node.js",
     "simplewallet",
     "bitcoin",
-    "bitmonerod",
 	"digitalnoted"
   ],
   "author": "Brendan Telzrow",
