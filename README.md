@@ -1,12 +1,17 @@
-# monero-nodejs
+# digitalnote-nodejs
 
-A Node.js wallet manager for interacting with Monero's simplewallet over JSON-RPC. 
+A Node.js wallet manager for interacting with Digitalnote's simplewallet over JSON-RPC. 
 
-For more information about Monero, visit: https://getmonero.org/home
+For more information about Digitalnote, visit: http://digitalnote.org
+
+For documentation, visit: http://digitalnote.eu
 
 Donations:
 
-XMR: `47Vmj6BXSRPax69cVdqVP5APVLkcxxjjXdcP9fJWZdNc5mEpn3fXQY1CFmJDvyUXzj2Fy9XafvUgMbW91ZoqwqmQ6RjbVtp`
+XDN: `ddcgpCXeQ5JSyuKtGPBMwoZZfwpbyeGxi2xtpmyqRJ9i8otyo29rdNGGUteGPWb5y5V6dkLHuzZJCMSV4P53EE6r1nAjbMSNo`
+
+# Anything below is not updated at the moment
+##
 
 ## Install the package 
 
